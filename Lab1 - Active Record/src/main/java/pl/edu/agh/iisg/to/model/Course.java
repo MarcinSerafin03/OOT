@@ -82,7 +82,7 @@ public class Course {
     public List<Student> studentList() {
         String findStudentListSql = "SELECT * FROM student JOIN student_course ON student.id = student_course.student_id WHERE student_course.course_id = ?";
         Object[] args = {id};
-
+    
         List<Student> resultList = new LinkedList<>();
 
         try{
