@@ -1,6 +1,6 @@
 package app;
 
-import model.Photo;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 import util.PhotoDownloader;
 import util.PhotoProcessor;
 import util.PhotoSerializer;
@@ -52,6 +52,9 @@ public class PhotoCrawler {
     }
 
     public void downloadPhotosForMultipleQueries(List<String> queries) {
-        // TODO Implement me :(
+        photoDownloader.searchForPhotos(queries).
+                observeOn(Schedulers.io())
+                .subscribe(photoSerializer::savePhoto,
+                        throwable -> log.log(Level.WARNING, "Could not download a photo 5", throwable));
     }
 }
