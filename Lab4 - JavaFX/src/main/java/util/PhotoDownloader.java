@@ -40,7 +40,7 @@ public class PhotoDownloader {
                                     return Observable.empty();
                                 })
 //                         Uncomment line below to download each photo in separate thread
-//                        .subscribeOn(Schedulers.computation())
+                        .subscribeOn(Schedulers.computation())
                 );
     }
 
