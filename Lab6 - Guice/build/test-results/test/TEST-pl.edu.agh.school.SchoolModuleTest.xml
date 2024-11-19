@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pl.edu.agh.school.SchoolModuleTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-11-19T21:51:05" hostname="DESKTOP-D94IMRE" time="0.336">
+  <properties/>
+  <testcase name="testLoggerSingleton()" classname="pl.edu.agh.school.SchoolModuleTest" time="0.336"/>
+  <system-out><![CDATA[Logger constructor
+pl.edu.agh.logger.Logger@40f70521
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
