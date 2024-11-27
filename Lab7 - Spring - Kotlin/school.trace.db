@@ -1,0 +1,4 @@
+2024-11-22 16:06:32.960605+01:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "ID" nie istnieje
+Table "ID" not found; SQL statement:
+select * from ID [42102-232]

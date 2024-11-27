@@ -1,3 +1,6 @@
-.idea
-.gradle
+*.idea
+*.gradle
 *.dat
+*.bat
+gradle/
+gradlew
