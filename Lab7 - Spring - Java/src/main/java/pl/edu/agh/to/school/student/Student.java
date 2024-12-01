@@ -77,4 +77,8 @@ public class Student {
     public Course getCourse() {
         return course;
     }
+
+    public void assignCourse(Course course) {
+        this.course = course;
+    }
 }

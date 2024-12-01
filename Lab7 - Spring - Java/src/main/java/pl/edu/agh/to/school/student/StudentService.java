@@ -42,6 +42,13 @@ public class StudentService {
 
     }
 
+    @Transactional
+    public void enrollStudent(Student student, Course course) {
+        student.assignCourse(course);
+        course.assignStudent(student);
+        studentRepository.save(student);
+    }
+
     public double calculateGradesMean(int studentId) {
         Student student = studentRepository.findById(studentId).orElseThrow(
                 () -> new IllegalArgumentException("Student not found"));
